@@ -1,0 +1,213 @@
+/*
+Theme Name: Supercoole thema
+Author: Jochem de Wit
+Author URI: https://www.finessepro.nl/ik
+Version: 1:0
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+a{
+    color: dodgerblue;
+}
+
+.bericht{
+  border-bottom: 6px double royalblue;
+}
+.bericht:last-of-type{
+  border-bottom: 0;
+}
+
+.wrapper{
+  padding: 0 2em;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper img{
+  max-width: 100%;
+}
+/* Opmaak header */
+
+header{
+    background: dodgerblue;
+    color: #fff;
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    min-height: 20vh;
+}
+
+header p, h1, h2, h3{
+  font-family: 'Oswald', sans-serif;
+}
+a{
+  font-family: 'Montserrat', sans-serif;
+}
+
+header a{
+    color: #fff;
+}
+
+header>.wrapper>a{
+  text-decoration: none;
+}
+
+header>.wrapper>a:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+nav {
+  margin-left: -2em;
+  margin-right: -2em;
+
+}
+
+.zoek-term-in-kop{
+  color: royalblue;
+}
+
+/* Opmaak van het menu */
+nav ul.menu{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.3em;
+}
+nav .menu a{
+  text-decoration: none;
+  display: block;
+  background-color: royalblue;
+  padding: .5em 2em;
+  border-bottom: 1px solid #eee;
+}
+nav .menu a:hover{
+  background-color: blue;
+}
+
+nav .menu .current-menu-item a{
+  background-color: blue;
+  border-right: .3em solid red;
+}
+
+/* Het submenu */
+.sub-menu{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 1em;
+}
+
+.sub-menu *{
+  transition: all .5s ease-out;
+}
+
+.sub-menu a{
+  border-left: 1em solid blue;
+}
+
+.sub-menu.menu-verbergen{
+  display: none;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  padding: 0;
+  border-width: 0;
+}
+
+.menu-item-has-children>a.menu-is-open{
+  padding-top: .25em;
+}
+
+.menu-item-has-children>a::after{
+  content: '\25BC';
+  margin-left: 2em;
+}
+
+.menu-item-has-children>a.menu-is-open::after{
+  content: '\25B2';
+  margin-left: 2em;
+}
+aside{
+  color: royalblue;
+}
+.screen-reader-text{
+  display: none;
+}
+.BerichtMetaData{
+  font-size: .8em;
+  color: #aaa;
+}
+
+.BerichtMetaData a{
+color: #aaa;
+}
+.BerichtMetaData a:hover{
+  color: royalblue;
+}
+.BerichtMetaData u;{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.BerichtMetaData li{
+  display: inline;
+}
+
+.BerichtMetaData li::after{
+  content: " | ";
+}
+
+@media screen and (min-width: 850px) {
+header .wrapper{
+  border-right: 1px solid #eee;
+  min-height: 20vw;
+  margin-bottom: 2em;
+}
+
+  nav ul.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+  }
+
+  nav ul.menu a{
+    border-right: 1px solid #eee;
+  }
+  nav ul.menu{
+    border-left: 1px solid #eee;
+  }
+
+  nav #menu-extra-menu a{
+    font-size: .7em;
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 5em;
+  }
+  aside{
+    border-right: 1px solid royalblue;
+    margin-right: -2em;
+  }
+}
+
+/* Opmaak footer */
+footer{
+    background: dodgerblue;
+    color: #fff;
+}
+footer a{
+  color: #fff;
+}
