@@ -14,6 +14,7 @@ get_header();
 
       <!--  Container toevoegen-->
       <article class="bericht">
+          Dit is een pagina (page.php)
           <h2><?php the_title() ?></h2>
         <?php the_content() ?>
       </article>
@@ -29,7 +30,7 @@ get_header();
 
     </div>
     <aside>
-      <?php dynamic_sidebar('widget_aside'); ?>
+      <?php dynamic_sidebar('widget-aside'); ?>
     </aside>
   </main>
 </div>

@@ -32,7 +32,7 @@ get_header();
 
     </div>
     <aside>
-      <?php dynamic_sidebar('widget_aside'); ?>
+      <?php dynamic_sidebar('widget-aside'); ?>
     </aside>
   </main>
 </div>
