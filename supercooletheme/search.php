@@ -25,7 +25,7 @@ get_header();
 
       <?php endwhile;
         else :
-          echo '<p>Er zijn geen berichten gevonden voor de zoekterm: <em> class="zoek-term-in-kop">' . get_search_query(); .'</em></p>';
+          echo '<p>Er zijn geen berichten gevonden voor de zoekterm: <em> class="zoek-term-in-kop">' . get_search_query() .'</em></p>';
         endif;
         // Einde wordpress loop
       ?>
