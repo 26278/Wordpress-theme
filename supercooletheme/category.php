@@ -6,7 +6,7 @@ get_header();
 <div class="wrapper">
   <main>
     <div>
-      <h2>De berichten van de categorie: <em class="zoek-term-in-kop"> <?= single_cat_title(); ?> </em></h2>
+      <h2>De berichten van de categorie: <em class="zoek-term-in-kop"> <?php single_cat_title(); ?> </em></h2>
       <?php
       //De wordpress loop
       if( have_posts() ) :
@@ -25,14 +25,14 @@ get_header();
 
       <?php endwhile;
         else :
-          echo '<p>Er zijn geen berichten gevonden voor de categorie:' . single_cat_title(); .'</em></p>';
+          echo "<p>Er zijn geen berichten gevonden voor de categorie: " . single_cat_title() ."</p>";
         endif;
         // Einde wordpress loop
       ?>
 
     </div>
     <aside>
-      <?php dynamic_sidebar('widget_aside'); ?>
+      <?php dynamic_sidebar('widget-aside'); ?>
     </aside>
   </main>
 </div>

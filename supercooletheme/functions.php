@@ -25,7 +25,7 @@ function supercooletheme_widgets() {
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '<h4 class="widgettitle">',
-		'after_title'   => '</h4>'
+		'after_title'   => '</h4>',
 	));
 }
 add_action('widgets_init', 'supercooletheme_widgets');
