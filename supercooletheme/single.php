@@ -14,9 +14,7 @@ get_header();
 
       <!--  Container toevoegen-->
       <article class="bericht">
-        <a href="<?php the_permalink() ?>">
           <h2><?php the_title() ?></h2>
-        </a>
         <?php the_content() ?>
       </article>
       <div class="BerichtMetaData">
@@ -35,6 +33,7 @@ get_header();
           echo '<p>Er zijn geen berichten gevonden</p>';
         endif;
         // Einde wordpress loop
+        comments_template("", true);
       ?>
 
     </div>
